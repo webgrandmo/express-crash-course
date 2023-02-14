@@ -5,6 +5,12 @@ const app = express();
 
 // Init middleware
 app.use(logger);
+
+// Body parser middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
+// API Routes
 app.use('/api/members', require('./routes/api/members'));
 
 // Set static folder

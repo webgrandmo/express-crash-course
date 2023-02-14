@@ -1,3 +1,5 @@
+const uuid = require('uuid');
+
 const members = [
 	{
 		id: 1,
